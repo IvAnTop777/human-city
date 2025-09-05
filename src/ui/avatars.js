@@ -3,12 +3,12 @@ import { state, save } from '../state.js';
 
 // Ожидаемые файлы в public/avatars/ (HTTPS — дружит с CSP Telegram)
 export const AVATAR_IMAGES = {
-'warrior_m': 'public/avatars/warrior_m.webp',
-'warrior_f': 'public/avatars/warrior_f.webp',
-'hacker_m' : 'public/avatars/hacker_m.webp',
-'hacker_f' : 'public/avatars/hacker_f.webp',
-'seer_m' : 'public/avatars/seer_m.webp',
-'seer_f' : 'public/avatars/seer_f.webp'
+'warrior_m': 'public/avatars/warrior_m.webp.png',
+'warrior_f': 'public/avatars/warrior_f.webp.png',
+'hacker_m' : 'public/avatars/hacker_m.webp.png',
+'hacker_f' : 'public/avatars/hacker_f.webp.png',
+'seer_m' : 'public/avatars/seer_m.webp.png',
+'seer_f' : 'public/avatars/seer_f.webp.png'
 };
 
 
