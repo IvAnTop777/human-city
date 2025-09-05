@@ -1,1 +1,70 @@
-Todo
+<!doctype html>
+<div class="grid2" style="margin-top:6px;align-items:center">
+<button class="btn" id="cg_restart">Restart</button>
+<span class="hint">💎×3 · 🤖 · 👥 · 🧠</span>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Lore -->
+<section class="screen" id="screen-lore">
+<div class="card">
+<div class="hint" data-i18n="lore_title">Легенда и бестиарий</div>
+<p class="hint" data-i18n="lore_text">Собирай кристаллы идентичности и защищай Human City.</p>
+</div>
+</section>
+
+
+<!-- Wallet -->
+<section class="screen" id="screen-wallet">
+<div class="card">
+<div class="hint">Wallet</div>
+<p data-i18n="wallet_text">Подключение кошелька будет доступно позже.</p>
+<button class="btn" id="walletBtn" data-i18n="connect">Подключить</button>
+</div>
+</section>
+</main>
+
+
+<nav id="nav" class="nav">
+<div class="tabs">
+<button class="tab active" data-tab="profile"><i>👤</i><span data-i18n="tab_profile">Профиль</span></button>
+<button class="tab" data-tab="quests"><i>📜</i><span data-i18n="tab_quests">Задания</span></button>
+<button class="tab" data-tab="crystals"><i>💎</i><span data-i18n="tab_crystals">Кристаллы</span></button>
+<button class="tab" data-tab="lore"><i>📖</i><span data-i18n="tab_lore">Легенда</span></button>
+<button class="tab" data-tab="wallet"><i>👛</i><span>Wallet</span></button>
+<div class="active-pill" id="activePill"></div>
+</div>
+</nav>
+</div>
+
+
+<!-- Onboarding overlay -->
+<div class="onb" id="onb">
+<div class="panel">
+<div class="steps"><i id="st1" class="active"></i><i id="st2"></i></div>
+<div id="step1">
+<div class="hint">Добро пожаловать в Human City</div>
+<div class="row"><label>Ник</label><input id="onb_name" placeholder="Player"/></div>
+<div class="actions">
+<button class="btn" id="onb_next">Дальше</button>
+</div>
+</div>
+<div id="step2" style="display:none">
+<div class="hint">Выбери аватар</div>
+<div class="chars" id="onb_chars"></div>
+<div class="actions">
+<button class="btn ghost" id="onb_back">Назад</button>
+<button class="btn" id="onb_finish">Начать</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="toast" class="toast"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
