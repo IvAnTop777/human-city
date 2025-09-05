@@ -1,1 +1,6 @@
-todo
+export const i18n = {
+ru:{Unverified:'Не верифицирован',Verified:'Верифицирован',profile_title:'Профиль',name:'Имя',name_hint:'По умолчанию — ник Telegram, можно изменить',choose_char:'Выбери персонажа',quests_title:'Задания (стартовые)',lore_title:'Легенда и бестиарий',lore_text:'Собирай кристаллы идентичности и защищай Human City.',wallet_text:'Подключение кошелька будет доступно позже.',connect:'Подключить',tab_profile:'Профиль',tab_quests:'Задания',tab_crystals:'Кристаллы',tab_lore:'Легенда',q1:'Сыграй 1 раз',q2:'Набери 500 очков',q3:'Уничтожь 10 ботов'},
+en:{Unverified:'Unverified',Verified:'Verified',profile_title:'Profile',name:'Name',name_hint:'Defaults to Telegram nick; you can change it',choose_char:'Choose your character',quests_title:'Quests (starter)',lore_title:'Lore & Bestiary',lore_text:'Collect identity crystals and defend Human City.',wallet_text:'Wallet connection coming soon.',connect:'Connect',tab_profile:'Profile',tab_quests:'Quests',tab_crystals:'Crystals',tab_lore:'Lore',q1:'Play 1 time',q2:'Score 500',q3:'Eliminate 10 bots'},
+zh:{Unverified:'未验证',Verified:'已验证',profile_title:'资料',name:'昵称',name_hint:'默认 Telegram 昵称，之后可修改',choose_char:'选择角色',quests_title:'任务（入门）',lore_title:'世界与怪志',lore_text:'收集身份水晶、守护 Human City。',wallet_text:'钱包连接即将上线。',connect:'连接',tab_profile:'资料',tab_quests:'任务',tab_crystals:'水晶',tab_lore:'世界',q1:'玩 1 局',q2:'单局 500 分',q3:'消灭 10 个机器人'}
+};
+export function t(lang, key){ return (i18n[lang]&&i18n[lang][key]) || i18n.ru[key] || key; }
